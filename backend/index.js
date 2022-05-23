@@ -23,7 +23,7 @@ app.use(bodyParser.json)
 app.use(cors());
 
 //Connect to database
-mongoose.connect("mongodb+srv://Sushant:Sushant12345@cluster0.99un2.mongodb.net/Inspektlabs?retryWrites=true&w=majority");
+mongoose.connect("mongodb+srv://Sushant:<password>@cluster0.99un2.mongodb.net/Inspektlabs?retryWrites=true&w=majority");
 //Multer for storing uploaded files
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
